@@ -1,4 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><defs>
+    
+    <symbol>
+    <path fill="#fff" d="M24 2 0 13.25l7.67 2.367L19.5 6.375l-8.998 10.116.007.003-.009-.003V22l4.301-4.182 5.45 1.682L24 2Z"/>
+    </symbol>
+
+    
     <symbol id="icon-close">
         <path  d="M8 .806 7.194 0 4 3.194.806 0 0 .806 3.194 4 0 7.194.806 8 4 4.806 7.194 8 8 7.194 4.806 4 8 .806Z"/>
     </symbol>
