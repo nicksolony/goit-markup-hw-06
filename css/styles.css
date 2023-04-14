@@ -480,7 +480,8 @@ header {
     margin-right: 120px;
 }
 
-.social-media .social-header{
+.social-media .social-header,
+.subscription .subscribe-header{
     color: white;
     font-weight: 500;
     margin-bottom: 16px;
@@ -542,6 +543,14 @@ header {
     color:var(--border-color);
     letter-spacing: 0.02em;
     width: 264px;
+}
+
+.social-media {
+    margin-right: 80px;
+}
+
+.social-media p {
+    width: 100%;
 }
 
 /* backdrop  */

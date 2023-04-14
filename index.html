@@ -373,6 +373,13 @@
                 </li>
                 </ul>
             </div>
+            <div class="subscription">
+                <p class="subscribe-header">Subscribe</p>
+                <form class="subscription-form">
+                    <input type="text" name="subscription-email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -387,5 +394,21 @@
     </div>
 
     <script src="./js/modal.js"></script>
+
+    <script>
+        (() => {
+          document
+            .querySelector('.subscription-form')
+            .addEventListener('submit', e => {
+              e.preventDefault();
+  
+              new FormData(e.currentTarget).forEach((value, name) =>
+                console.log(`${name}: ${value}`),
+              );
+  
+              e.currentTarget.reset();
+            });
+        })();
+      </script>
 </body>
 </html>
