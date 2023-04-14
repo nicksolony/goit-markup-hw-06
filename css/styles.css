@@ -510,8 +510,7 @@ header {
 .subscription .subscribe-header{
     color: white;
     font-weight: 500;
-    margin-bottom: 16px;
-    
+    margin-bottom: 16px;    
 }
 
 .social-media-links {
@@ -554,6 +553,9 @@ header {
     
 }
 
+.subscription-form {
+    display: flex;
+}
 .subscription-form input {
     width: 264px;
     height: 40px;
@@ -572,6 +574,25 @@ header {
   letter-spacing: 0.04em;
   font-size: 12px;
   line-height: 2;
+}
+
+.subscription-form button {
+    background-color:var(--filter-btn-color);
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: white;
+    font-weight: 500;
+    line-height:2;
+}
+
+.subscription-form svg {
+    fill:currentColor;
 }
 
 /* backdrop  */
