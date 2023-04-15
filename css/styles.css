@@ -697,11 +697,6 @@ header {
     flex-direction: column; */
 }
 
-.contact-form svg {
-    width: 18px;
-    height: 24px;
-}
-
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -712,6 +707,10 @@ header {
     margin-top: 4px;
     padding: 11px 16px;
     transition: border-color 250ms var(--timing);
+}
+
+.contact-form input {
+    padding-left: 38px;
 }
 
 .contact-form input:focus-within,
@@ -735,7 +734,18 @@ header {
     letter-spacing: 0.04em;
     color:var(--light-slate);
     display: block;
+    position: relative;
 }
+
+.contact-form svg {
+    width: 18px;
+    height: 24px;
+    fill: var(--heading-color-2);
+    position: absolute;
+    left:16px;
+    top:26px;
+}
+
 
 .contact-form label {
     margin-bottom: 8px;
