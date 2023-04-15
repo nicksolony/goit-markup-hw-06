@@ -598,7 +598,8 @@ header {
     transition: background-color 250ms var(--timing);
 }
 
-.subscription-form button:hover {
+.subscription-form button:hover,
+.subscription-form button:focus {
     background-color: var(--filter-btn-bg-active-color);
 }
 
