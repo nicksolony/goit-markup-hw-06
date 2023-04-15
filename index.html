@@ -388,7 +388,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" data-modal-close>
+            <button type="button" data-modal-close class="close">
                 <svg class="close-modal">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg> 
@@ -409,7 +409,7 @@
                     Email
                     <input type="email" name="email">
                 </label>
-                <label>
+                <label class="comments">
                     Comment
                 <textarea
                     name="comment"
@@ -418,6 +418,12 @@
                     placeholder="Text input"
                 ></textarea>
                 </label>
+                <label class="checkbox">
+                    <input type="checkbox" name="accept-terms">
+                    <span>I accept the terms and conditions of the <a href="" target="_blank" rel="noopener noreferrer">Privacy Policy</a></span>
+                </label>
+                <button type="submit">Send
+                </button>
            </form>
         </div>
     </div>
@@ -427,7 +433,7 @@
     <script>
         (() => {
           document
-            .querySelector('.subscription-form')
+            .querySelector('.contact-form')
             .addEventListener('submit', e => {
               e.preventDefault();
   
@@ -439,5 +445,20 @@
             });
         })();
       </script>
+          <script>
+            (() => {
+              document
+                .querySelector('.subscription-form')
+                .addEventListener('submit', e => {
+                  e.preventDefault();
+      
+                  new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`),
+                  );
+      
+                  e.currentTarget.reset();
+                });
+            })();
+          </script>
 </body>
 </html>
