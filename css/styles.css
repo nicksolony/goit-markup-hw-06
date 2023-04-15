@@ -794,7 +794,7 @@ header {
      border: 1px solid var(--navy-blue-modal);
      display:inline-block;
      padding: 4px 3px;
-     transition: background-color 250ms var(--timing), border-width 250ms var(--timing);
+     transition: background-color 250ms var(--timing) ;
 }
 
 
@@ -805,7 +805,7 @@ header {
     background-size: contain;
     background-position:center;
     background-origin: content-box;
-    border: 0px solid white;
+    border: none;
 
 }
 .contact-form button {
