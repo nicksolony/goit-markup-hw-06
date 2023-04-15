@@ -793,11 +793,20 @@ header {
      left: 0;
      border: 1px solid var(--navy-blue-modal);
      display:inline-block;
+     padding: 4px 3px;
+     transition: background-color 250ms var(--timing), border-width 250ms var(--timing);
 }
 
 
 .contact-form .checkbox input:checked + .check {
     background-color: var(--filter-btn-bg-active-color);
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    background-origin: content-box;
+    border: 0px solid white;
+
 }
 .contact-form button {
     width: 169px;
