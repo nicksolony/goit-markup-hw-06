@@ -697,6 +697,11 @@ header {
     flex-direction: column; */
 }
 
+.contact-form svg {
+    width: 18px;
+    height: 24px;
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -706,6 +711,12 @@ header {
     resize: none;
     margin-top: 4px;
     padding: 11px 16px;
+    transition: border-color 250ms var(--timing);
+}
+
+.contact-form input:focus-within,
+.contact-form textarea:focus-within {
+    border-color: var(--filter-btn-color);
 }
 
 .contact-form textarea::placeholder {
