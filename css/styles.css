@@ -718,6 +718,8 @@ header {
     border-color: var(--filter-btn-color);
 }
 
+
+
 .contact-form textarea::placeholder {
     color: var(--navy-blue-modal);
 }
@@ -744,6 +746,11 @@ header {
     position: absolute;
     left:16px;
     top:26px;
+    transition: fill 250ms var(--timing);
+}
+
+.contact-form input:focus-within + svg {
+    fill: var(--heading-color-1);
 }
 
 
