@@ -707,7 +707,6 @@ header {
     border-radius: 4px;
     border: 1px solid var(--navy-blue-modal);
     resize: none;
-    margin-top: 4px;
     padding: 11px 16px;
     transition: border-color 250ms var(--timing);
 }
@@ -734,6 +733,7 @@ header {
 .contact-form label {
     position: relative;
     display: block;
+    margin-bottom: 8px;
 }
 
 .form-label {
@@ -742,6 +742,14 @@ header {
     line-height: 1.166666667;
     letter-spacing: 0.04em;
     color:var(--light-slate);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.contact-form-input {
+    position: relative;
+    display: block;
+    /* align-items: center; */
 }
 
 .contact-form svg {
@@ -750,7 +758,7 @@ header {
     fill: var(--heading-color-2);
     position: absolute;
     left:16px;
-    top:26px;
+    top:8px;
     transition: fill 250ms var(--timing);
 }
 
@@ -759,9 +767,6 @@ header {
 }
 
 
-.contact-form label {
-    margin-bottom: 8px;
-}
 
 .contact-form .comments {
     margin-bottom: 16px;
