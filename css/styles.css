@@ -483,6 +483,7 @@ header {
 }
 .company-info {
     margin-right: 120px;
+    max-width: 264px;
 }
 
 
@@ -500,7 +501,7 @@ header {
 .footer p {
     color:var(--border-color);
     letter-spacing: 0.02em;
-    width: 264px;
+    /* width: 264px; */
 }
 
 .social-media {
