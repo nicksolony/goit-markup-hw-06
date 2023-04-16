@@ -792,6 +792,14 @@ header {
     overflow: hidden;
 }
 
+.checkbox > .form-label {
+    margin-bottom: 0;
+}
+
+.form-label a {
+    line-height: 1.33;
+}
+
 .contact-form .check {
     margin-right: 8px;
     width: 16px;
