@@ -843,7 +843,9 @@ header {
 .contact-form button {
     width: 169px;
     height:56px;
-    margin-left: 95px;
+    /* margin-left: 95px; */
+    display:block;
+    margin: 0 auto;
     background-color: var(--filter-btn-color);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
