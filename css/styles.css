@@ -561,6 +561,7 @@ header {
 
 .subscription-form {
     display: flex;
+    align-items: center;
 }
 .subscription-form input {
     width: 264px;
@@ -584,7 +585,7 @@ header {
 
 .subscription-form button {
     background-color:var(--filter-btn-color);
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     padding: 8px 24px;
     border-radius: 4px;
@@ -595,6 +596,7 @@ header {
     color: #ffffff;
     font-weight: 500;
     line-height:2;
+    cursor:pointer;
 
     transition: background-color 250ms var(--timing);
 }
@@ -825,6 +827,7 @@ header {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
+    cursor:pointer;
     transition: background-color 250ms var(--timing);
 }
 
